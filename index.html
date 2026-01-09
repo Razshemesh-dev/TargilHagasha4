@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Admissions Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head> 
+    <body>
+    <div class="container">
+        <h1>College Admissions Calculator</h1>
+        
+        <div class="field">
+            <label>age:</label>
+            <input type="text" id="age" placeholder="הכנס גיל">
+        </div>
+        
+        <fieldset class="radio-group">
+            <legend>Select from the below options:</legend>
+            <div class="radio-option">
+                <label>
+                    Psychometric and Bagrut
+                    <input type="radio" name="testType" value="psychometric" checked onchange="toggleFields()">
+                </label>
+            </div>
+            <div class="radio-option">
+                <label>
+                    Mechina and Bagrut
+                    <input type="radio" name="testType" value="mechina" onchange="toggleFields()">
+                </label>
+            </div>
+        </fieldset>
+        
+        <div class="field">
+            <label>Psychometric Grade:</label>
+            <input type="text" id="psychometric" placeholder="הכנס ציון פסיכומטרי">
+        </div>
+        
+        <div class="field">
+            <label>Bagrut Grade:</label>
+            <input type="text" id="bagrut" placeholder="הכנס ציון בגרות">
+        </div>
+        
+        <div class="field">
+            <label>Mechina Grade:</label>
+            <input type="text" id="mechina" placeholder="הכנס ציון מכינה">
+        </div>
+        
+        <button onclick="validate()">validate</button>
+        
+        <div id="result" ></div>
+    </div>
+    <script src="javascript.js" ></script>
+    </body>
+</html>
