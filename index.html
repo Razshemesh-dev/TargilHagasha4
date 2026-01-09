@@ -13,7 +13,7 @@
         
         <div class="field">
             <label>age:</label>
-            <input type="text" id="age" placeholder="הכנס גיל">
+            <input type="number" min="0" max="120" id="age" placeholder="הכנס גיל">
         </div>
         
         <fieldset class="radio-group">
@@ -34,17 +34,17 @@
         
         <div class="field">
             <label>Psychometric Grade:</label>
-            <input type="text" id="psychometric" placeholder="הכנס ציון פסיכומטרי">
+            <input type="number" min="0" max="800" id="psychometric" placeholder="הכנס ציון פסיכומטרי">
         </div>
         
         <div class="field">
             <label>Bagrut Grade:</label>
-            <input type="text" id="bagrut" placeholder="הכנס ציון בגרות">
+            <input type="number" min="0" max="100" id="bagrut" placeholder="הכנס ציון בגרות">
         </div>
         
         <div class="field">
             <label>Mechina Grade:</label>
-            <input type="text" id="mechina" placeholder="הכנס ציון מכינה">
+            <input type="number" min="0" max="100" id="mechina" placeholder="הכנס ציון מכינה">
         </div>
         
         <button onclick="validate()">validate</button>
@@ -53,4 +53,5 @@
     </div>
     <script src="javascript.js" ></script>
     </body>
+
 </html>
